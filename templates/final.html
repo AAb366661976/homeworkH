@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黃歆芝的求職自傳履歷網頁</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS 動畫 -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- 自訂CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="bg-light">
+    <header class="bg-dark text-white py-4 text-center">
+        <h1 data-aos="fade-down">黃歆芝的求職自傳履歷網頁</h1>
+        <p data-aos="fade-up">累積經驗，提升資訊相關能力。</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">關於我</h5>
+                        <p class="card-text"></p>
+                        <a href="/me" class="btn btn-primary mt-auto">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">我的履歷</h5>
+                        <p class="card-text">自傳、學經歷與技能展示。</p>
+                        <a href="/work" class="btn btn-primary mt-auto">了解更多</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">資訊顧問介紹</h5>
+                        <p class="card-text">了解資訊顧問的職涯內容。</p>
+                        <a href="/futuer" class="btn btn-primary mt-auto">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap & AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
